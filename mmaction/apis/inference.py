@@ -96,6 +96,7 @@ def inference_recognizer(model, video, outputs=None, as_tensor=True, **kwargs):
         if osp.isdir(video):
             input_flag = 'rawframes'
     else:
+        
         raise RuntimeError('The type of argument video is not supported: '
                            f'{type(video)}')
 
